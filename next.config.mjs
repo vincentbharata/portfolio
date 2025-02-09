@@ -5,7 +5,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: "/portfolio",
+  // Hapus basePath jika tidak perlu
+  // basePath: "/portfolio",
 };
 
 export default withSentryConfig(

@@ -28,7 +28,7 @@ const RecentProjects = () => {
                   style={{ backgroundColor: "#13162D" }}
                 >
                   <img
-                    src="{`${process.env.NEXT_PUBLIC_BASE_PATH}/bg.png"
+                    src="/bg.png"
                     alt="bgimg"
                   />
                 </div>

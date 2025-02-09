@@ -53,7 +53,7 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["HTML", "CSS", "Javascript","Github"];
+  const leftLists = ["HTML", "CSS", "Javascript", "Github"];
   const rightLists = ["ReactJS", "JAVA", "C++", "JIRA"];
   const leftListsData = ["SQL", "Python", "Airflow"];
   const rightListsData = ["Apps Script", "PowerBI", "Looker Studio"];
@@ -75,20 +75,20 @@ export const BentoGridItem = ({
     setCopied(true);
   };
   const handleDownloadCv = () => {
-     // Path ke file PDF di folder public
-     const fileUrl = "/CV Vincent Bharata.pdf";
+    // Path ke file PDF di folder public
+    const fileUrl = "/CV Vincent Bharata.pdf";
 
-     // Mengambil file PDF
-     fetch(fileUrl)
-       .then((response) => response.blob())
-       .then((blob) => {
-         // Menggunakan file-saver untuk memicu unduhan
-         saveAs(blob, "CV_Vincent_Bharata.pdf");
-       })
-       .catch((error) => {
-         console.error("Error downloading file:", error);
-       });
-   };
+    // Mengambil file PDF
+    fetch(fileUrl)
+      .then((response) => response.blob())
+      .then((blob) => {
+        // Menggunakan file-saver untuk memicu unduhan
+        saveAs(blob, "CV_Vincent_Bharata.pdf");
+      })
+      .catch((error) => {
+        console.error("Error downloading file:", error);
+      });
+  };
   return (
     <div
       className={cn(

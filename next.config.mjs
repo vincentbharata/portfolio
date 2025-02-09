@@ -21,9 +21,5 @@ export default withSentryConfig(
     hideSourceMaps: true,
     disableLogger: true,
     automaticVercelMonitors: true,
-
-    // Menonaktifkan plugin Webpack untuk menghindari upload source maps
-    disableServerWebpackPlugin: true,
-    disableClientWebpackPlugin: true,
   }
 );

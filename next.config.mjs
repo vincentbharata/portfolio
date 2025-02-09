@@ -1,15 +1,15 @@
 import { withSentryConfig } from "@sentry/nextjs";
 
 /** @type {import('next').NextConfig} */
-const nextConfig = withSentryConfig(
-  {
-    output: "export",
-    images: {
-      unoptimized: true, // Mencegah Next.js mengoptimalkan gambar (dibutuhkan untuk static export)
-    },
-    basePath: "/portfolio", // Sesuaikan dengan nama repo GitHub Pages
-    assetPrefix: "/portfolio/", // Tambahkan '/' di akhir agar benar
+const nextConfig = {
+  output: "export",
+  images: {
+    unoptimized: true,
   },
+};
+
+export default withSentryConfig(
+  nextConfig,
   {
     silent: true,
     org: "javascript-mastery",
@@ -21,9 +21,9 @@ const nextConfig = withSentryConfig(
     hideSourceMaps: true,
     disableLogger: true,
     automaticVercelMonitors: true,
+
+    // Menonaktifkan plugin Webpack untuk menghindari upload source maps
     disableServerWebpackPlugin: true,
     disableClientWebpackPlugin: true,
   }
 );
-
-export default nextConfig;

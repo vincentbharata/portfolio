@@ -3,16 +3,9 @@ import { withSentryConfig } from "@sentry/nextjs";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  async exportPathMap(defaultPathMap) {
-    // Hapus API route dari output
-    delete defaultPathMap["/api/sentry-example-api"];
-    return defaultPathMap;
-  },
   images: {
     unoptimized: true,
   },
-  // Hapus basePath jika tidak perlu
-  // basePath: "/portfolio",
 };
 
 export default withSentryConfig(

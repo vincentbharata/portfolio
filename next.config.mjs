@@ -2,7 +2,12 @@ import { withSentryConfig } from "@sentry/nextjs";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: "export",
+  output: "export",
+  async exportPathMap(defaultPathMap) {
+    // Hapus API route dari output
+    delete defaultPathMap["/api/sentry-example-api"];
+    return defaultPathMap;
+  },
   images: {
     unoptimized: true,
   },

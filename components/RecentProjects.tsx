@@ -27,7 +27,10 @@ const RecentProjects = () => {
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <img src="/bg.png" alt="bgimg" />
+                  <img
+                    src="{`${process.env.NEXT_PUBLIC_BASE_PATH}/bg.png"
+                    alt="bgimg"
+                  />
                 </div>
                 <img
                   src={item.img}

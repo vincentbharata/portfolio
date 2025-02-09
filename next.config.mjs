@@ -7,8 +7,8 @@ const nextConfig = withSentryConfig(
     images: {
       unoptimized: true, // Mencegah Next.js mengoptimalkan gambar (dibutuhkan untuk static export)
     },
-    basePath: "/portfolio",
-    assetPrefix: "/portfolio",
+    basePath: "/portfolio", // Sesuaikan dengan nama repo GitHub Pages
+    assetPrefix: "/portfolio/", // Tambahkan '/' di akhir agar benar
   },
   {
     silent: true,
@@ -21,6 +21,8 @@ const nextConfig = withSentryConfig(
     hideSourceMaps: true,
     disableLogger: true,
     automaticVercelMonitors: true,
+    disableServerWebpackPlugin: true,
+    disableClientWebpackPlugin: true,
   }
 );
 

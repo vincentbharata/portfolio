@@ -4,8 +4,10 @@ import { withSentryConfig } from "@sentry/nextjs";
 const nextConfig = {
   output: "export",
   images: {
-    unoptimized: true,
+    unoptimized: true, // Mencegah Next.js mengoptimalkan gambar (dibutuhkan untuk static export)
   },
+  basePath: "/portfolio",
+  assetPrefix: "/portfolio",
 };
 
 export default withSentryConfig(

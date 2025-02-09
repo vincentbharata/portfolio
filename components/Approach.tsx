@@ -7,17 +7,15 @@ const Approach = () => {
   return (
     <section className="w-full py-20">
       <h1 className="heading">
-        My <span className="text-purple">approach</span>
+        My <span className="text-purple">organizational experience</span>
       </h1>
       {/* remove bg-white dark:bg-black */}
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
         {/* add des prop */}
         <Card
-          title="Planning & Strategy"
-          icon={<AceternityIcon order="Phase 1" />}
-          des="We'll collaborate to map out your website's goals, target audience, 
-          and key functionalities. We'll discuss things like site structure, 
-          navigation, and content requirements."
+          title="Committee Member"
+          icon={<AceternityIcon order="ICPC" />}
+          des="Collaborated with the HIMTI team to successfully organize the internationally recognized International Collegiate Programming Contest (ICPC) 2022, leading publication efforts and managing social media for INC & ICPC 2022 to maximize engagement and reach."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -26,11 +24,9 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Development & Progress Update"
-          icon={<AceternityIcon order="Phase 2" />}
-          des="Once we agree on the plan, I cue my lofi playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way."
+          title="Event Division"
+          icon={<AceternityIcon order="HIMTI BINUS" />}
+          des="Led the Webinar Division for Computerun 2.0 HIMTI X HIMSISFO, overseeing a team of 4 and coordinating with 95 staff across divisions to plan, execute, and optimize the event, including theme selection, rundown management, and technical setup."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -48,11 +44,9 @@ const Approach = () => {
           {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" /> */}
         </Card>
         <Card
-          title="Development & Launch"
-          icon={<AceternityIcon order="Phase 3" />}
-          des="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
-          from the ground up."
+          title="Active Cyber Security Community Member"
+          icon={<AceternityIcon order="CSC" />}
+          des="Active member of the BINUS Cyber Security Community, engaging in discussions, knowledge-sharing, and hands on activities to deepen expertise in cybersecurity."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -132,7 +126,7 @@ const Card = ({
         </h2>
         {/* add this one for the description */}
         <p
-          className="text-sm opacity-0 group-hover/canvas-card:opacity-100
+          className="text-xl opacity-0 group-hover/canvas-card:opacity-100
          relative z-10 mt-4 group-hover/canvas-card:text-white text-center
          group-hover/canvas-card:-translate-y-2 transition duration-200"
           style={{ color: "#E4ECFF" }}
